@@ -58,7 +58,7 @@
     <main>
 	 <header>
 		<h3>A JavaScript project by Liaina Mageo</h3>
-		<h3 id="greeting">Greeting goes here</h3>
+		<h3 id="greeting"></h3>
 	</header>
 	 <p>This page demonstrates how to use JavaScript to change a webpage's greeting, background color, and images, according
 		to the time of day. By observing the code in my repository, you will find a breakdown of how it was possible to alter
@@ -105,31 +105,31 @@
 	*/
 
 
-
 	let myDate = new Date();
 	let myCopyright = myDate.getFullYear();
+	// myDate = new Date();
 	let myHour = myDate.getHours();
 	let myGreeting = "";
 	let myColor = "";
 	let myPic = "";
 
 	// REMOVE FOLLOWING LINE, ONLY FOR TESTING
-	// myHour = 19
+	//  myHour = 10
 
 // if, else, and else if statements demonstrated below.
-	if(myHour > 5 && myHour < 12){//morning
+	if(myHour >= 5 && myHour < 12) {//morning
 		// alert("good morning!");
 		myGreeting = "Good Morning!";
 		myColor = "orange";
 		myPic = "morning.jpg";
 
-	}else if(myHour > 12 && myHour < 18){//afternoon
+	}else if(myHour >= 12 && myHour < 18) {//afternoon
 		// alert("good afternoon!");
 		myGreeting = "Good Afternoon!";
 		myColor = "yellow";
 		myPic = "afternoon.jpg";
 
-	}else if(myHour >= 18 && myHour < 23){//evening
+	}else if(myHour >= 18 && myHour < 23) {//evening
 		// alert("good evening!");
 		myGreeting = "Good Evening!";
 		myColor = "teal";
